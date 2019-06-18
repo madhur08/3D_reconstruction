@@ -10,13 +10,15 @@ LIBS = -lglfw -lglew -framework OpenGL `pkg-config --libs gtk+-3.0`
 LIBS_linux = -lGL -lGLU -lglut -lGLEW -lglfw3 -lX11 -lXxf86vm -lXrandr -lpthread -lXi -ldl -lXinerama -lXcursor `pkg-config --libs gtk+-3.0`
 
 $(ODIR)/%.o: %.cpp $(DEPS)
+	@mkdir -p obj
 	$(CXX) -c $< -o $@ $(CXXFlAG)
 
 mac : $(OBJ)
+	@mkdir -p obj
 	$(CXX) $^ -o app $(LIBS)
 linux : $(OBJ)
 	$(CXX) $^ -o app $(LIBS_linux)
 
 .PHONY: clean
 clean:
-	rm -f $(ODIR)/*.o core
+	rm -rf $(ODIR) core

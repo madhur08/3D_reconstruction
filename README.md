@@ -61,6 +61,8 @@ make clean
 make linux
 ```
 
+export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/<version_number>/lib/pkgconfig
+You can add this to your bash file.
 ## Usage
 
 To start the program type
