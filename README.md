@@ -48,6 +48,7 @@ sudo make install
  For Mac type:
 
 ```
+export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/<version_number>/lib/pkgconfig
 cd Code/src
 make clean
 make mac
@@ -61,8 +62,8 @@ make clean
 make linux
 ```
 
-export PKG_CONFIG_PATH=/usr/local/Cellar/libffi/<version_number>/lib/pkgconfig
-You can add this to your bash file.
+
+
 ## Usage
 
 To start the program type
