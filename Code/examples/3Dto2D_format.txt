@@ -1,0 +1,22 @@
+//This file explains the format and cannot be run
+
+p a b c d // The plane ax+by+cz=d for projecting the front view
+p a b c d // The plane ax+by+cz=d for projecting the side view
+p a b c d // The plane ax+by+cz=d for projecting the top view
+
+example:
+p 0 0 1 -6
+p 1 0 0 -6
+p 0 1 0 -6
+
+v x y z // 3D vertex (x,y,z)
+example:
+v -5 5 5
+
+f v1 v2 v3 v4 // Face using v1th v2th v3th and v4th vertices in this file
+example:
+f 1 4 8 5 // Face using 1st 2nd 3rd and 4th vertices in this file
+
+f v1 v2 v3 v4 : v5 v6 v7 v8 //Holes can be added inside a face by specifying the hole face after a colon
+example:
+f 1 4 8 5 : 2 7 9 3 // The hole is specified using 2nd, 7th , 9th and 3rd vertex

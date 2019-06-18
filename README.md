@@ -77,6 +77,8 @@ The software opens with a window with 3 buttons on it-
 Clicking on 3D to 2D button or 2D to 3D button opens a File Explorer for the user to select the file that contains the model that the user wants to transform.
 The user can make any number of conversions and choose when to quit the software, by clicking on the Quit button.
 
+**The file format can be seen in examples**
+
 ## Authors
 
 + Garvit Gupta

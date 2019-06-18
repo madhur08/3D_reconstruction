@@ -1,0 +1,14 @@
+//This file explains the format and cannot be run
+
+vf x_cordinate y_cordinate //The vertex in front view
+example:- vf 4 1
+
+Similarly, vt and vs for top view and side view respectively.
+
+efs vertex1_number vertex2_number //The solid edge in front view
+example:- efs 2 3 // refers to edge between second and third vertex in this file
+
+efh vertex1_number vertex2_number //The hidden edge in front view
+example:- efs 2 3 // refers to edge between second and third vertex in this file
+
+Similarly, eth & ets, esh & ess for top view and side view respectively. 
